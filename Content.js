@@ -1,19 +1,32 @@
 
-//create a div with some content
-function generateDiv() {
+// create  Ads with the title ,the url and the description 
+function generateAds(url, title, description) {
     let div = document.createElement("div");
-    div.innerHTML = " <div>"
-        + "<strong>Annonce </strong><a href=''>https://www.media.com/</a>"
-        + "<h3 style='color:#2c2c8d'>Hotel Paris Opera Affiliated By Melia</h3>"
-        + "<p>"
-        + "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        + "Lorem Ipsum has been the industry's"
-        + "</p>"
-
-    "</div>";
+    div.innerHTML = `<div class='taw'>
+                       <div class='uEierd'>
+                         <strong>Annonce </strong><a href='${url}'>${url}</a>
+                         <a href='${url}'>
+                           <h3 style='color:#2c2c8d;cursor: pointer'>${title}</h3>
+                         </a>
+                         <p class='VwiC3b yXK7lf MUxGbd yDYNvb lyLwlc lEBKkf'>      
+                            ${description}   
+                         </p>
+                         
+                        </div>
+                      </div><br>`;
     return div;
 }
+
 //getting the id of the div containing all the search content
 var googleSearchDiv = document.getElementById("search");
-googleSearchDiv.prepend(generateDiv());
+
+//append the ads to google search 
+googleSearchDiv.prepend(
+    generateAds("https://www.booking.com/", "Hotel Paris - France -Booking.com",
+        "Réservé votre last minute online..."));
+
+googleSearchDiv.prepend(
+    generateAds("https://www.media.com/", "Hotel Paris Opera Affiliated By Melia",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry."));
+
 
