@@ -8,6 +8,10 @@
             "js":     ["Content.js"]
         }
     ],
+    "web_accessible_resources": [{
+        "resources": ["template.html"],
+        "matches": ["<all_urls>"]
+      }],
     "icons": {
         "16": "logo.png",
         "32": "logo.png",

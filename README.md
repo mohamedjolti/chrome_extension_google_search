@@ -17,10 +17,12 @@ the icon name , the content_scripts Files
 
 ## Content.js
 is the javascript code exectuted once the google search page rendre the
-result
+result  
+## template.html
+is the html template of the adds that we will add to the page 
 
 
 # the installation
-pull the project code
-copy  the link chrome://extensions/ and past it on a chrome tab
-click on load unpacked and choose the directory of the project
+pull the project code  
+copy  the link chrome://extensions/ and past it on a chrome tab  
+click on load unpacked and choose the directory of the project  
